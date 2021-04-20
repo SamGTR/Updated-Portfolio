@@ -1,0 +1,277 @@
+/* Application font family*/
+*{
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* header elements placement and spacing */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px 20px 0px;
+    background-color: #2d363d;
+}
+
+aside{
+ min-width: 25%;
+}
+
+/* Navbar display */
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 20px;
+    
+}
+
+nav li {
+    display: inline;
+    font-weight: bold;
+    
+}
+
+nav a {
+    color: #42d4df;
+    text-decoration: none;
+    border-bottom: 4px solid #42d4df ;
+}
+
+/* Header name background color and font color */
+header h1{
+      background-color: #42d4df;
+      color: rgb(39, 42, 43);
+      padding-left: 40px;
+      font-size: 50px;
+      
+}
+
+/* defining relative position */
+.image{
+      position: relative;
+}
+
+/* setting centre display image */
+#developer{
+    height: 200px;
+    width: 100%;  
+    object-fit: cover;
+}
+
+/* 'Coding rocks!' Text absolute position on developer image */
+.coding {
+    position: absolute;
+    bottom: 15px;
+    right: 50px;
+    font-size: 50px;
+    background-color: rgb(39, 42, 43);
+    color: #42d4df;
+}
+
+/* All row display type */
+.first-row, 
+.second-row,
+.third-row{
+      display: flex;
+      margin: 20px 60px 0 0;
+      padding-bottom: 20px;
+}
+
+/* Left side main heading display */
+#about-me, 
+#work,
+#contact {
+    flex: 20%;
+    padding-right: 20px;
+    font-size: 40px;
+    color: rgb(39, 42, 43) ;
+    border-right: 5px solid  rgb(39, 42, 43);
+    text-align: right;
+}
+
+/* About me write up */
+.detail, .work-detail {
+    flex: 80%;
+    padding-left: 20px;
+}
+
+/* afl image parameters */
+.afl-image
+   {
+    height: 500px;
+    width: 100%;  
+    object-fit: cover;
+    border: 10px solid #42d4df ;
+}
+  
+#afl-image
+   {
+    height: 500px;
+    width: 100%;  
+}
+
+/* Setting relative reference for texts on images */
+.work-relative{
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+/* Absolute position of text on images */
+.work-text{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    background-color: #42d4df;
+    color: rgb(39, 42, 43);
+    padding: 15px;
+}
+  
+.work-text h2{
+    padding-bottom: 10px;
+
+}
+
+.weather, 
+.day-planner, 
+.quiz, .password {
+    flex: 50%;
+    position: relative;
+    background-color: #fff;
+}
+
+/* Abosulte positioning text on images */
+.day-planner-text,
+.password-text{
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    background-color: #42d4df;
+    color: rgb(39, 42, 43);
+    padding: 15px;
+    
+}
+
+.day-planner-text h2,
+.password-text h2{
+    padding-bottom: 10px;
+
+}
+
+.weather-image, 
+.day-planner-image,
+.quiz-image,
+.password-image {
+    height: 200px;
+    width: 95%;  
+}
+
+/* images placement and border */
+#weather-image, 
+#day-planner-image,
+#quiz-image,
+#password-image{
+    height: 200px;
+    width: 95%;  
+    object-fit: cover;
+    border: 10px solid #42d4df ;
+   
+    
+}
+
+#day-planner-image, #password-image{
+    margin-left: 5px;
+}
+
+/* Contact me right side content */
+.detail ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-size: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.detail p {
+    font-size: 20px;
+}
+
+.detail a {
+    color: #202b2c;
+    text-decoration: none;
+    border-bottom: 4px solid #263233 ;
+}
+  
+.detail li {
+    display: inline-block;
+    font-size: larger;
+    padding: 20px 20px;
+}
+
+/* Image brightness change with mouse hovering */
+#afl-image:hover,
+#weather-image:hover,
+#day-planner-image:hover,
+#quiz-image:hover,
+#password-image:hover
+  {
+      filter: brightness(130%);
+}
+
+/* Responsive design for smaller pixel screen */
+@media screen and (max-width: 900px) {
+  .work-relative, ul{
+      flex-direction: column;
+    }
+
+  li{
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+  .first-row, 
+  .second-row,
+  .third-row{
+    display: block;
+    
+  }
+
+  #about-me, 
+  #work,
+  #contact{
+    border-right: none;
+    border-bottom: 5px solid  rgb(39, 42, 43);
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+#weather-image, 
+#day-planner-image,
+#quiz-image,
+#password-image {
+    height: 200px;
+    width: 100%;  
+    object-fit:cover;   
+    margin: 10px 0;
+}
+aside{
+ width: 100%;
+}
+aside > div {
+      display:flex;
+    
+     }
+
+aside  div  h3 {
+    margin-left: 10px;
+}
+
+.detail li {
+    padding-left: 0;
+}
+
+}
